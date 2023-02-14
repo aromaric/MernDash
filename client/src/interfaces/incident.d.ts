@@ -1,0 +1,62 @@
+import { BaseKey } from '@pankod/refine-core';
+
+export interface FormFieldProp {
+  title: string,
+  labelName: string
+}
+
+export interface FormValues {
+    //title: string,
+    //description: string,
+    incidentType: string,
+    //location: string,
+   // price: number | undefined,
+    unite: string,
+    date: Date,
+    heure: Date,
+    location: string,
+    longitude:string,
+    latitude:string,
+    region: string,
+    province: string,
+    ville: string,
+    victimfds: number,
+    victimcivil: number,
+    victimhani:number,
+    totalami: number,
+    blessefds: number,
+    blessecivil: number,
+    equipementperdu: string,
+    equipementrecup: string,
+    commentaire: string,
+}
+
+export interface IncidentCardProps {
+  id?: BaseKey | undefined,
+  //title: string,
+  date: Date,
+  unite: string,
+  location: string,
+  longitude:number,
+  latitude:number,
+  region: string,
+  incidentType: string,
+  photo: string,
+  incidentType: string,
+  //unite: string,
+  //date: Date,
+  heure: Date,
+  //location: string,
+  //region: string,
+  province: string,
+  ville: string,
+  victimfds: number,
+  victimcivil: number,
+  victimhani:number,
+  totalami: number,
+  blessefds: number,
+  blessecivil: number,
+  equipementperdu: string,
+  equipementrecup: string,
+  commentaire: string,
+}
